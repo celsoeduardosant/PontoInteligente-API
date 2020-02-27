@@ -1,0 +1,25 @@
+Depois de configurado Git executar os comandos abaixo
+para sincronizar o projeto com GitHub e Travis CI
+
+
+1 - git status ==> verifica novas atualizações no projeto.
+			       Em vermelho arquivos que serão comitados
+			   
+2 - git add .  ==> prepara os arquivos para serem sincronizados. 
+				   Nesse caso, como passamos um ponto como argumento, ele adicionará todos os arquivos criados ou modificados.
+				   
+3 - git status (novamente) ==> arquivos preparados para o commit (verde)
+
+4 - git commit -m "Adicionando suporte a CI com TravisCI" ==> cria uma operação de envio, ou seja, pega todos os arquivos que foram adicionados 
+															  e os agrupa para serem enviados. Com o argumento -m informamos uma mensagem que 
+															  identifica esse commit. É importante que essa mensagem seja clara para que seja 
+															  fácil identificar o que foi feito naqueles arquivos que estão sendo enviados.
+															  
+5 -	git push origin master ==> essa é a operação de sincronização propriamente dita. Ela pegará o último commit e o enviará para o repositório.												
+
+
+Outro comandos importantes:
+
+> git init : inicia um novo repositório
+> git remote add origin https://gitlab.com/empresa-teste/projeto-x.git: liga o repositório criado com o projeto no GitLab para enviar os arquivos
+> 
