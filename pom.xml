@@ -8,10 +8,12 @@
 		<version>2.2.4.RELEASE</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
+	
 	<groupId>com.cess</groupId>
 	<artifactId>PontoInteligente</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<name>PontoInteligente</name>
+	
 	<description>API para sistema de ponto inteligente</description>
 
 	<properties>
