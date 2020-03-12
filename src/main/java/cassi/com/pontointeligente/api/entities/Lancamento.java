@@ -26,6 +26,11 @@ import cassi.com.pontointeligente.api.enums.TipoEnum;
 public class Lancamento implements Serializable {
 	
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private Long id;
 	private Date data;
 	private String descricao;

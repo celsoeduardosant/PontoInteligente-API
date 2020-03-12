@@ -31,6 +31,11 @@ import cassi.com.pontointeligente.api.enums.PerfilEnum;
 public class Funcionario implements Serializable {
 
 		
+	/**
+	 * 
+	 */
+	private static final long serialVersionUID = 1L;
+	
 	private Long id;
 	private String nome;
 	private String email;
@@ -39,7 +44,7 @@ public class Funcionario implements Serializable {
 	private BigDecimal valorHora;
 	private Float qtdHorasTrabalhoDia;
 	private Float qtdHorasAlmoco;
-	private PerfilEnum perfil;
+	private PerfilEnum perfil;	
 	private Date dataCriacao;
 	private Date dataAtualizacao;
 	private Empresa empresa;
@@ -163,7 +168,7 @@ public class Funcionario implements Serializable {
 	public void setDataAtualizacao(Date dataAtualizacao) {
 		this.dataAtualizacao = dataAtualizacao;
 	}
-	
+
 	@ManyToOne(fetch = FetchType.EAGER)
 	public Empresa getEmpresa() {
 		return empresa;
