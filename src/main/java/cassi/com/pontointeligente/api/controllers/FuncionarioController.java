@@ -3,7 +3,9 @@ package cassi.com.pontointeligente.api.controllers;
 import java.math.BigDecimal;
 import java.security.NoSuchAlgorithmException;
 import java.util.Optional;
+
 import javax.validation.Valid;
+
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,6 +31,7 @@ import cassi.com.pontointeligente.api.utils.PasswordUtils;
 public class FuncionarioController {
 
 	private static final Logger log = LoggerFactory.getLogger(FuncionarioController.class);
+	
 
 	@Autowired
 	private FuncionarioService funcionarioService;
